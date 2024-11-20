@@ -5,7 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{5F88FB55-0625-41C5-89AE-8F0E2AB948D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeTracker", "source\PokeTracker\PokeTracker.csproj", "{64CFF8A4-4526-4006-B717-67F38A619453}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PokeTracker", "source\PokeTracker\PokeTracker.csproj", "{64CFF8A4-4526-4006-B717-67F38A619453}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{91941EAB-3EC6-4405-A390-D88998B09A28}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PokeTracker.Modules.LivingDex", "source\PokeTracker.Modules.LivingDex\PokeTracker.Modules.LivingDex.shproj", "{1523D001-4146-460C-91C6-09648867AB9E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PokeTracker.Modules.Core", "source\PokeTracker.Modules.Core\PokeTracker.Modules.Core.shproj", "{228B099A-2DFB-48D4-AC9E-A8E7485DD1E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +29,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{64CFF8A4-4526-4006-B717-67F38A619453} = {5F88FB55-0625-41C5-89AE-8F0E2AB948D0}
+		{1523D001-4146-460C-91C6-09648867AB9E} = {91941EAB-3EC6-4405-A390-D88998B09A28}
+		{228B099A-2DFB-48D4-AC9E-A8E7485DD1E7} = {91941EAB-3EC6-4405-A390-D88998B09A28}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93A4ADDB-8571-42F9-9407-DDCAAD3FAB98}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		source\PokeTracker.Modules.LivingDex\PokeTracker.Modules.LivingDex.projitems*{1523d001-4146-460c-91c6-09648867ab9e}*SharedItemsImports = 13
+		source\PokeTracker.Modules.Core\PokeTracker.Modules.Core.projitems*{228b099a-2dfb-48d4-ac9e-a8e7485dd1e7}*SharedItemsImports = 13
+		source\PokeTracker.Modules.Core\PokeTracker.Modules.Core.projitems*{64cff8a4-4526-4006-b717-67f38a619453}*SharedItemsImports = 5
+		source\PokeTracker.Modules.LivingDex\PokeTracker.Modules.LivingDex.projitems*{64cff8a4-4526-4006-b717-67f38a619453}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
