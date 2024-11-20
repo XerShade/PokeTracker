@@ -1,0 +1,19 @@
+﻿version: '3.4'
+
+services:
+  poketracker:
+    image: poketracker/pokemon.tracker
+    build:
+      context: .
+      dockerfile: source/PokeTracker/Dockerfile
+    volumes:
+        - "common_data:/app/common"
+        - "server_data:/app"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Release"
+    container_name: PokeTracker
+
+volumes:
+  common_data:
+  server_data:
+    
